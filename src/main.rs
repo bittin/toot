@@ -3,14 +3,15 @@
 use error::Error;
 
 mod app;
+mod cache;
+mod client;
 mod config;
 mod error;
+mod features;
 mod i18n;
-mod pages;
+mod persistence;
 mod settings;
-mod subscriptions;
-mod utils;
-mod widgets;
+mod streaming;
 
 fn main() -> Result<(), Error> {
     settings::init();
